@@ -1,5 +1,5 @@
 #!groovy
-// Check server1 properties
+// Ansible playbook start
 properties([disableConcurrentBuilds()])
 
 pipeline {
@@ -13,7 +13,7 @@ pipeline {
     }
 
     stages {
-        stage('Checkout') { // добавим новый Stage
+        stage('Checkout') {
             steps {
                 script {
                     git branch: 'master', credentialsId: 'github_key', url: "git@github.com:NikAvrinsky/templates.git"
@@ -24,7 +24,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                sh 'ansible-playbook playbook1.yml -i hosts' // посколькуV скрипты работают в одной папке, на втором шаге мы можем просто запустить плейбук
+                sh 'ansible-playbook playbook1.yml -i hosts'
             }
         }
     }
