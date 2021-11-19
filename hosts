@@ -1,4 +1,9 @@
 
 [STAGING]
-172.20.0.10
-172.20.0.11
+Server2 ansible_host=172.20.0.10
+Server1 ansible_host=172.20.0.11
+
+[STAGING:vars]
+ansible_user                 : kamazz
+ansible_ssh_private_key_file : /home/kamazz/.ssh/id_rsa
+
