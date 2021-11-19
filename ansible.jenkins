@@ -1,3 +1,7 @@
+#!groovy
+// Check server1 properties
+properties([disableConcurrentBuilds()])
+
 pipeline {
     agent any
 
