@@ -1,11 +1,9 @@
 - name: "Test playbook run"
 
-hosts: all
+hosts: STAGING
 
 tasks:
 
-  - name: "Debug"
+  - name: "Ping"
 
-    ansible.builtin.debug:
-
-      msg: "Test debug"
+    ping:
