@@ -2,10 +2,10 @@
 
 - name: "Test playbook run"
 
-hosts: STAGING
+  hosts: STAGING
 
-tasks:
+  tasks:
 
-  - name: "Ping"
+    - name: "Ping"
 
-    ping:
+      ping:
