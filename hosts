@@ -5,5 +5,5 @@ Server1 ansible_host=172.20.0.11
 
 [STAGING:vars]
 ansible_user                 : kamazz
-ansible_ssh_private_key_file : /home/kamazz/.ssh/id_rsa
+ansible_ssh_private_key_file : /home/jenkins/.ssh/ansible_rsa
 
