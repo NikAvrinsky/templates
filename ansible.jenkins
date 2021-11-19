@@ -9,7 +9,7 @@ pipeline {
         stage('Checkout') { // добавим новый Stage
             steps {
                 script {
-                    git branch: 'main', credentialsId: 'github_key', url: "git@github.com:NikAvrinsky/templates.git"
+                    git branch: 'master', credentialsId: 'github_key', url: "git@github.com:NikAvrinsky/templates.git"
                     sh "ls -lart ./*"
                     sh "git branch -a"
                 }
