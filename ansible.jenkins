@@ -1,4 +1,4 @@
-o#!groovy
+#!groovy
 // Check server1 properties
 properties([disableConcurrentBuilds()])
 
